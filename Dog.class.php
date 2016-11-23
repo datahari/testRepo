@@ -4,10 +4,21 @@ class Dog
 {
 	protected $age = 0;
 	protected $name;
+	protected $breed;
+	protected $color;
 
-	public function __construct()
+	public function __construct( $breed = false )
 	{
+		if( $breed !== false ) {
+			$this->breed = $breed;
+		} else {
+			$this->breed = "Bulldog";
+		}
+	}
 
+	public function getBreed()
+	{
+		return $this->breed;
 	}
 
 	public function setAge( $age )
