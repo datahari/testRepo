@@ -50,4 +50,16 @@ class DogTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals( 3, $dog->getAge() );
 	}
 
+	public function testDogHasBreedWhenCreated()
+	{
+		$dog = new Dog();
+		$this->assertFalse( empty( $dog->getBreed() ) );
+	}
+
+	public function testBreedCanBeSetOnDogCreation()
+	{
+		$dog = new Dog( "Chihuahua" );
+		$this->assertEquals( "Chihuahua", $dog->getBreed() );
+	}
+
 }
