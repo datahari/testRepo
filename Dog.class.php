@@ -12,7 +12,7 @@ class Dog
 		if( $breed !== false ) {
 			$this->breed = $breed;
 		} else {
-			$this->breed = "Mixed";
+			$this->breed = "Bulldog";
 		}
 	}
 
