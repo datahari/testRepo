@@ -5,6 +5,7 @@ class Dog
 	protected $age = 0;
 	protected $name;
 	protected $breed;
+	protected $color;
 
 	public function __construct( $breed = false )
 	{
